@@ -142,27 +142,32 @@ section{
 
 @media (max-width:600px) {
     .headd h1{
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+    .headd{
+        margin: 5vw 0px 8vw;
     }
     .headd div{
+        width: 1px;
         height: 4vw;
     }
     .I2,.I4{
-        height: 110px;
-        padding: 0px 2vw;
+        height: 9vh;
+        margin-top: 3vw;
+        padding: 2vw;
     }
     .I2 img,
     .I4 img{
-        width: 30vw;
+        width: 35vw;
     }
     .P2one{
-        font-size: 2.2vw;
+        font-size: 3vw;
         width: 50%;
     }
     .P2text,
     .P4text_C,
     .P4text_D{
-        font-size: 2.2vw;
+        font-size: 3vw;
         padding: 0.5vw;
     }
 }
