@@ -7,6 +7,7 @@
         color: white;
     }
 
+
     .shape{
         position: absolute;
         top: 50%;
@@ -25,6 +26,12 @@
         background-image:linear-gradient(#750e17,black);
         width: 35%;
         margin-top: 5vw;
+    }
+
+    .checkk{
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
 
     .background h1{
@@ -108,21 +115,30 @@
         .background input:not([type = "checkbox"],[type="submit"]),
         label,
         a{
-            font-size: 2vw;
+            font-size: 2.5vw;
+        }
+        .background input:not([type = "checkbox"]){
+            padding: 5px 10px;
+            border-bottom-width: 2px;
+        }
+        input[type="checkbox"]{
+            width: 2.5vw;
         }
         h1{
             font-size: 4vw;
         }
         img{
+            padding: 5px;
             width: 15%;
         }
         .background{
-            width: 60%;
+            width: 70%;
+            margin-top: 10vw;
             padding: 5vw 4vw;
         }
         .Password span{
-            font-size: 2vw;
-            margin-left: 35vw;
+            font-size: 2.5vw;
+            margin-left: 40vw;
         }
         .shape{
             top: 30%;
