@@ -11,6 +11,12 @@ img{
     padding: 10px;
 }
 
+.checkk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .shape{
     position: absolute;
     top: 50%;
@@ -95,13 +101,21 @@ input:not([type = "checkbox"],[type="submit"])
     }
 
 @media (max-width:600px) {
-    .regg,
+   .regg,
     input:not([type = "checkbox"],[type = "submit"]),
     label{
-        font-size: 2vw;
+        font-size: 2.5vw;
+    }
+    input:not([type="checkbox"]){
+        padding: 5px 10px;
+        border-bottom-width: 2px;
+    }
+    input[type="checkbox"]{
+        width: 2.5vw;
     }
     .all{
-        width: 60%;
+        margin-top: 10vw;
+        width: 70%;
         padding: 5vw 4vw;
     }
     h1{
@@ -109,10 +123,11 @@ input:not([type = "checkbox"],[type="submit"])
     }
     .Password span,
     .Confirm span{
-        font-size: 2vw;
-        margin-left: 35vw;
+        font-size: 2.5vw;
+        margin-left: 40vw;
     }
     img{
+        padding: 5px;
         width: 15%;
     }
     .shape{
