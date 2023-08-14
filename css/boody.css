@@ -54,12 +54,15 @@ body{
 
 @media (max-width: 600px) {
     .section1 h1{
-        font-size: 3.5vw;
+        font-size: 4vw;
         width: 100%;
-        margin-bottom: 0vw;
+        margin-bottom: -1vw;
+    }
+    .section1 video{
+        height: 70vh;
     }
     .section1 button{
-        font-size: 1.7vw;
+        font-size: 2vw;
         padding: 2vw 2.5vw;
     }
 }
@@ -98,12 +101,12 @@ body{
 @media (max-width:600px)
 {
     .section2 h1{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .section2 .childa,
     .section2 .childb{
         margin: 5vw 0px;
-        font-size: 2.3vw;
+        font-size: 2.5vw;
     }
     .section2 .childa img,
     .section2 .childb img{
@@ -175,12 +178,14 @@ body{
 {
     .section3 .parent h1{
         font-size: 4vw;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     }
     .section3 .child2 img{
         width: 100%;
     }    
     .section3 .child1 img{
         width: 70%;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     }
     .section3 .child1 .imgs{
         flex-direction: column;
@@ -220,13 +225,13 @@ body{
 @media (max-width:600px) {
     .section4 .rate h1,
     .section4 .buys h1{
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
     .section4 .rate i{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     .section4{
-        font-size: 3.5vw;
+        font-size: 4vw;
         padding: 20% 3%;
     }
 }
