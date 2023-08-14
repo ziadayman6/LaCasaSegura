@@ -6,7 +6,6 @@ footer{
     background-color: #9a9a9a;
     color: black;
     font-size: 1.3vw;
-    font-weight: bold;
     box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -16,6 +15,7 @@ footer i{
 
 .blacked{
     background-color: #7b7b7b;
+    font-size: 1vw;
     box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,12 +41,17 @@ footer a:hover{
 @media (max-width:600px)
 {
     footer{
-        font-size: 2.5vw;
+        font-size: 2.7vw;
     }
     footer i{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }    
     footer div{
         padding: 1.5vw;
     }    
+    .blacked{
+        font-size: 1.5vw;
+        box-shadow: -2px -2px 5px rgba(0,0,0,0.5);
+    }
+        
 }
