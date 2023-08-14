@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.headd{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.headd h1{
+    font-size: 2.8vw;
+    margin-top: 5vw;
+}
+
+.headd div{
+    width: 2px;
+    height: 4vw;
+    background-color: white;
+}
+
+.I2,
+.I4{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:radial-gradient(#750e17 10%,black);
+    height: 200px;
+    width:100%;
+    border-radius: 10px;
+}
+.P2one{
+    width:50%;
+    color: white;
+    font-size: 1.6vw;
+    font-style:italic;
+}
+
+.P2two
+{
+    position:relative;
+}
+
+.P2two:hover .P2text{
+    display: block;
+}
+
+.P2two:hover img
+{ 
+    opacity: 0.5;  
+}
+
+.soon{
+    opacity: 0.5;
+}
+
+.P2text
+{
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.5vw;
+    text-align: center; 
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5vw;
+}
+
+.P2text a{
+    text-decoration: none;
+}
+
+.soonp{
+    padding: 0.5vw;
+}
+
+.P4one{
+    position:relative;
+    margin-bottom:10vw;
+    border-radius:8px;
+}
+
+.P4one:hover .P4text_C{
+    display: block;
+}
+
+.P4one:hover img
+{ 
+    opacity: 0.5;  
+}
+
+.P4text_C,
+.P4text_D
+{
+    position: absolute;
+    display: none;
+    left: 50%;
+    bottom:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.5vw;
+    text-align: center; 
+    color: black;
+    background-color: white;
+    padding: 0.5vw;   
+    border-radius: 5px;
+}
+
+.P4two
+{
+    position:relative;
+    margin-top:10vw;
+    border-radius:8px;
+}
+
+.P4two:hover .P4text_D{
+    display: block;
+}
+.P4two:hover img
+{ 
+    opacity: 0.5;  
+}
+
+img:not(.logo){
+    width: 22vw;
+}
+
+section{
+    padding: 15% 10%;
+    background-color: black;
+}
+
+@media (max-width:600px) {
+    .headd h1{
+        font-size: 3vw;
+    }
+    .headd div{
+        height: 4vw;
+    }
+    .I2,.I4{
+        height: 110px;
+        padding: 0px 2vw;
+    }
+    .I2 img,
+    .I4 img{
+        width: 30vw;
+    }
+    .P2one{
+        font-size: 2.2vw;
+        width: 50%;
+    }
+    .P2text,
+    .P4text_C,
+    .P4text_D{
+        font-size: 2.2vw;
+        padding: 0.5vw;
+    }
+}
+
+/*--------------------------------------------------*/
+
+.animation p
+{
+        margin:auto;
+        box-sizing: border-box;
+        letter-spacing: 5px;
+
+}
+.ani{
+
+    position: relative ;
+    animation: text 2s 1;
+}
+@keyframes text
+{
+    0%
+    {
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%
+    {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+
+    }
+    85%{
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+    }
+}
+
+.up{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    padding: 1vw;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1vw;
+    background-color: #750e17;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.538);
+}
+
+.up a{
+    color: white;
+}
+
+@media (max-width:600px)
+{
+    .up{
+        font-size: 2vw;
+        padding: 2vw;
+        bottom: 2%;
+        right: 2%;
+    }
+}

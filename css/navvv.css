@@ -1,0 +1,48 @@
+nav{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    padding: 2vw;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    color: white;
+}
+
+nav .first,
+nav .first ul{
+    display: flex;
+    list-style: none;
+}
+
+nav img{
+    width: 10%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #750e17;
+}
+
+nav p{
+    margin-left: 1vw;
+    padding-left: 1vw;
+    border-left: white 2px solid;
+}
+
+nav ul li{
+    margin-right: 1vw;
+}
+
+@media (max-width: 600px) {
+    nav{
+        font-size: 1.8vw;
+        padding: 4vw 2vw;
+    }
+    nav img{
+        width: 10%;
+    }
+}

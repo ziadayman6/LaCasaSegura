@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="imgs/logo la casa segura-02-01.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="shape"></div>
+    <a href="body.html">
+        <img src="imgs/logo la casa segura-02-01.png" alt="none">&nbsp;
+    </a>
+<center>
+        <form action="body.html" class="background" id="login-form">
+            <h1>Login</h1><br>
+            <div class="Username">
+                <input type="text" placeholder="Username" id="uname" name="unn">
+            </div><br>
+            <div class="Password">
+                <input type="password" placeholder="Password" id="ps" name="pss">
+                <span onclick="showhide()">
+                    <i class="fa fa-eye" id="eye"></i>
+                </span>
+            </div><br>
+            <div>
+                <label>Remember Me</label>
+                <input type="checkbox"><br><br>
+            </div>
+            <div class="registration">
+                <a href="register.html"> Don't have an account ?</a><br><br>
+            </div> 
+            <div class="but">
+                <input class="button1" type="submit" value="Login" id="login-btn">
+            </div><br>
+        </form>      
+    </center>
+    <script src="https://kit.fontawesome.com/3de607b508.js" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    <script src="js/show.js"></script>
+</body>
+</html>

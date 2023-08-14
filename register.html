@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" href="imgs/logo la casa segura-02-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="shape"></div>
+    <a href="body.html">
+        <img src="imgs/logo la casa segura-02-01.png" alt="none">&nbsp;
+    </a>
+<center>
+        <form action="login.html" class="all" id="reg-form">
+            <div>
+                <h1>Register</h1>
+            </div><br>
+            <div class="FirstName">
+                <input type="text" placeholder="First name" id="fn" name="fname">
+            </div><br>
+            <div class="LastName">
+                <input type="text" placeholder="Last Name" id="ln" name="lname">
+            </div><br>
+            <div class="Age">
+                <input type="text" placeholder="Age" id="ag" name="age">
+            </div><br>
+            <div class="Email">
+                <input type="text" placeholder="Email" id="em" name="mail">
+            </div><br>
+            <div class="Username">
+                <input type="text" placeholder="Username" id="un" name="uname">
+            </div><br>
+            <div class="Password">
+                <input type="password" placeholder="Password" id="ps" name="pass">
+                <span onclick="showhide()">
+                    <i class="fa fa-eye" id="eye"></i>
+                </span>
+            </div><br>
+            <div class="Confirm">
+                <input type="password" placeholder=" Confirm Password" id="cp" name="cpass">
+                <span onclick="showhide2()">
+                    <i class="fa fa-eye" id="eye2"></i>
+                </span>
+            </div><br>
+            <div>
+                <input type="checkbox" id="cb">
+                <label>I accept Terms of use</label><br><br>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register" name="reg" class="regg" id="reg-btn">
+            </div>
+        </form>
+    </center>
+    <script src="https://kit.fontawesome.com/3de607b508.js" crossorigin="anonymous"></script>
+    <script src="js/register.js"></script>
+    <script src="js/show.js"></script>
+</body>
+</html>
