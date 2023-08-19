@@ -34,9 +34,6 @@ function checkInputs() {
 }
 
 function validation(){
-    usernameValue.style.outline = passwordValue.style.outline = firrstnameValue.style.outline = checkbox.style.outline = "none"
-    ageValue.style.outline = emailValue.style.outline = lastnameValue.style.outline = cpasswordValue.style.outline = "none"
-    
     const emailregex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     const passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
     const emailresult = emailregex.test(emailValue.value)
