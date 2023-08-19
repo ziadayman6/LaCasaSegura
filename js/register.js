@@ -40,8 +40,8 @@ function validation(){
     const passwordresult = passwordregex.test(passwordValue.value)
     if(ageValue.value < 16 || ageValue.value > 100)
     {
-        alert("Your age should be more than 16 years and less than 100 years")
         ageValue.style.outline = "2px solid red"
+        alert("Your age should be more than 16 years and less than 100 years")
         return false
     }
     if(emailresult === false)
