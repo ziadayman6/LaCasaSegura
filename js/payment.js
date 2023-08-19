@@ -52,6 +52,9 @@ function checkinputs()
 }
 
 function validate(){
+    cardname.style.outline = cardnum.style.outline = month.style.outline = year.style.outline = "none"
+    cvv.style.outline = phone.style.outline = address.style.outline = "none"
+    
     const cardnumberregex = /^[0-9]{16}$/
     const cardnameregex = /^[a-zA-Z\s-]{1,50}$/
     const cvvregex = /^[0-9]{3}$/
@@ -67,36 +70,43 @@ function validate(){
         if(cardnumberresult === false)
         {
             alert("Please enter a valid card number")
+            cardnum.style.outline = "2px solid red"
             return false
         }
         if(cardnameresult === false)
         {
             alert("Please enter a valid card holder name")
+            cardname.style.outline = "2px solid red"
             return false
         }
         if(month.value === "" || month.value > 12)
         {
             alert("Please enter a valid month")
+            month.style.outline = "2px solid red"
             return false
         }
         if(year.value < 2023)
         {
             alert("Please enter a valid year")
+            year.style.outline = "2px solid red"
             return false
         }
         if(cvvresult === false)
         {
             alert("Please enter a valid CVV")
+            cvv.style.outline = "2px solid red"
             return false;
         }
         if(phoneresult === false)
         {
             alert("Please enter a valid phone number")
+            phone.style.outline = "2px solid red"
             return false
         }
         if(addressresult === false || address.value === "")
         {
             alert("Please enter a valid address")
+            address.style.outline = "2px solid red"
             return false
         }
         return true    
