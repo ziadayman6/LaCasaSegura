@@ -45,4 +45,7 @@ nav ul li{
     nav img{
         width: 15%;
     }
+    nav ul li{
+        margin-right: 2.5vw;
+    }
 }
