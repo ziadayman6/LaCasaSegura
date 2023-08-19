@@ -34,6 +34,9 @@ function checkInputs() {
 }
 
 function validation(){
+    usernameValue.style.outline = passwordValue.style.outline = firrstnameValue.style.outline = checkbox.style.outline = "none"
+    ageValue.style.outline = emailValue.style.outline = lastnameValue.style.outline = cpasswordValue.style.outline = "none"
+    
     const emailregex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     const passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
     const emailresult = emailregex.test(emailValue.value)
@@ -41,20 +44,24 @@ function validation(){
     if(ageValue.value < 16 || ageValue.value > 100)
     {
         alert("Your age should be more than 16 years and less than 100 years")
+        ageValue.style.outline = "2px solid red"
         return false
     }
     if(emailresult === false)
     {
         alert("Please enter valid email")
+        emailValue.style.outline = "2px solid red"
         return false
     }
     if(passwordresult === false)
     {
         alert("Please enter valid password, password should contain at least one number and one special character and one upper case character and must be eight characters or longer.")
+        passwordValue.style.outline = "2px solid red"
         return false
     }
     if(cpasswordValue.value != passwordValue.value){
         alert("Please enter confirm password field like passsword field")
+        cpasswordValue.style.outline = "2px solid red"
         return false
     }
     return true
