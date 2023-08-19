@@ -107,7 +107,7 @@ input:not([type = "checkbox"],[type="submit"])
         font-size: 2.5vw;
     }
     input:not([type = "submit"]){
-        border-width: 1px;
+        outline-width: 1px;
     }
     input:not([type="checkbox"]){
         padding: 5px 10px;
