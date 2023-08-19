@@ -118,7 +118,7 @@
             font-size: 2.5vw;
         }
         .background input:not([type = "checkbox"],[type="submit"]){
-           border-width: 1px;
+           outline-width: 1px;
         }
         .background input:not([type = "checkbox"]){
             padding: 5px 10px;
