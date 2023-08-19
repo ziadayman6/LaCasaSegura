@@ -52,9 +52,6 @@ function checkinputs()
 }
 
 function validate(){
-    cardname.style.outline = cardnum.style.outline = month.style.outline = year.style.outline = "none"
-    cvv.style.outline = phone.style.outline = address.style.outline = "none"
-    
     const cardnumberregex = /^[0-9]{16}$/
     const cardnameregex = /^[a-zA-Z\s-]{1,50}$/
     const cvvregex = /^[0-9]{3}$/
