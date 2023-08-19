@@ -64,16 +64,16 @@ function validate(){
     const cvvresult = cvvregex.test(cvv.value)
     if(radio2.checked)
     {
-        if(cardnumberresult === false)
-        {
-            alert("Please enter a valid card number")
-            cardnum.style.outline = "2px solid red"
-            return false
-        }
         if(cardnameresult === false)
         {
             alert("Please enter a valid card holder name")
             cardname.style.outline = "2px solid red"
+            return false
+        }
+        if(cardnumberresult === false)
+        {
+            alert("Please enter a valid card number")
+            cardnum.style.outline = "2px solid red"
             return false
         }
         if(month.value === "" || month.value > 12)
